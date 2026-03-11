@@ -9,6 +9,7 @@ Proof of Concept comparing basic GAN with StyleGAN 3.
 - compare_gans.py - Compare GAN and StyleGAN 3 outputs
 - models/gan_mnist_generator.pth - Trained GAN generator weights
 - examples/ - Sample output images
+- stylegan3/ - StyleGAN 3 source code (from NVlabs/stylegan3)
 
 ## Setup
 
@@ -18,17 +19,10 @@ Proof of Concept comparing basic GAN with StyleGAN 3.
 2. Install required packages:
    pip install numpy matplotlib pillow tqdm
 
-3. Clone StyleGAN 3 repository:
-   git clone https://github.com/NVlabs/stylegan3.git
-
-4. Install StyleGAN 3 dependencies:
+3. Install StyleGAN 3 dependencies:
    pip install click scipy ninja imageio imageio-ffmpeg pyopengl glfw pyspng
 
-5. Modify StyleGAN 3 code to use reference implementation:
-   Change default impl parameter from 'cuda' to 'ref' in:
-   - stylegan3/torch_utils/ops/bias_act.py
-   - stylegan3/torch_utils/ops/filtered_lrelu.py
-   - stylegan3/torch_utils/ops/upfirdn2d.py
+Note: StyleGAN 3 source code is included in this repository. The code has been modified to use reference implementation (no CUDA compilation required).
 
 ## Usage
 
