@@ -20,8 +20,17 @@ wheels/
 .installed.cfg
 *.egg
 
-# StyleGAN3 specific
-stylegan3/
+# StyleGAN3 specific - ignore heavy files but keep source code
+stylegan3/*.pkl
+stylegan3/*.npy
+stylegan3/dnnlib/__pycache__/
+stylegan3/torch_utils/__pycache__/
+stylegan3/training/__pycache__/
+stylegan3/viz/__pycache__/
+stylegan3/gui_utils/__pycache__/
+stylegan3/metrics/__pycache__/
+stylegan3/*.pyc
+stylegan3/torch_extensions/
 
 # Data
 data/
