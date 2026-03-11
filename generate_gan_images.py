@@ -26,7 +26,7 @@ class Generator(nn.Module):
         return self.main(x).view(-1, num_channels, 28, 28)
 
 generator = Generator().to(device)
-generator.load_state_dict(torch.load("gan_mnist_generator.pth"))
+generator.load_state_dict(torch.load("models/gan_mnist_generator.pth"))
 generator.eval()
 
 os.makedirs("gan_mnist_output", exist_ok=True)

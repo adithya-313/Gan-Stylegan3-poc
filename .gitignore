@@ -20,22 +20,17 @@ wheels/
 .installed.cfg
 *.egg
 
-# PyTorch
-*.pth
-*.pkl
-
 # StyleGAN3 specific
 stylegan3/
-stylegan3_output/
 
 # Data
 data/
 *.zip
 
-# Output directories
-gan_mnist_output/
-stylegan3_output/
-comparison_output/
+# Output directories (keep sample outputs)
+# gan_mnist_output/
+# stylegan3_output/
+# comparison_output/
 
 # IDE
 .vscode/

@@ -29,7 +29,7 @@ class Generator(nn.Module):
         return self.main(x).view(-1, num_channels, 28, 28)
 
 gan_generator = Generator().to(device)
-gan_generator.load_state_dict(torch.load("gan_mnist_generator.pth"))
+gan_generator.load_state_dict(torch.load("models/gan_mnist_generator.pth"))
 gan_generator.eval()
 
 with torch.no_grad():

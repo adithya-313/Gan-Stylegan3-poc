@@ -7,7 +7,8 @@ Proof of Concept comparing basic GAN with StyleGAN 3.
 - gan_mnist.py - Basic GAN implementation on MNIST
 - generate_gan_images.py - Generate images using trained GAN
 - compare_gans.py - Compare GAN and StyleGAN 3 outputs
-- gan_mnist_generator.pth - Trained GAN generator weights
+- models/gan_mnist_generator.pth - Trained GAN generator weights
+- examples/ - Sample output images
 
 ## Setup
 
