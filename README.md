@@ -32,17 +32,17 @@ Proof of Concept comparing basic GAN with StyleGAN 3.
 
 ## Usage
 
-1. Train Basic GAN:
-   python gan_mnist.py
-
-2. Generate GAN Images:
+1. Generate GAN Images (using pre-trained model):
    python generate_gan_images.py
 
-3. Generate StyleGAN 3 Images:
+2. Generate StyleGAN 3 Images:
    python stylegan3/gen_images.py --outdir=stylegan3_output --trunc=1 --seeds=0-15 --network=https://api.ngc.nvidia.com/v2/models/nvidia/research/stylegan3/versions/1/files/stylegan3-t-ffhq-1024x1024.pkl
 
-4. Compare Results:
+3. Compare Results:
    python compare_gans.py
+
+4. Optional - Train Basic GAN from scratch:
+   python gan_mnist.py
 
 ## Results
 
